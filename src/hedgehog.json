@@ -2,51 +2,61 @@
     {
         "id": 1,
         "name": "cute hedgehog",
-        "image": "https://hedgehogclub.com/images/intro3.jpg"
+        "image": "https://hedgehogclub.com/images/intro3.jpg",
+        "value": 0
     },
     {
         "id": 2,
         "name": "small hedgehog",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINYRsJZSXUmm12B9Ks2JbsnkFrb2tLRNmooeTkLCRmric85qC"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINYRsJZSXUmm12B9Ks2JbsnkFrb2tLRNmooeTkLCRmric85qC",
+        "value": 0
     },
     {
         "id": 3,
         "name": "hedgehog",
-        "image": "https://i.pinimg.com/236x/c7/a9/49/c7a949d861560e6aae21d82c2bd819ce--cute-hedgehog-hedgehog-care.jpg"
+        "image": "https://i.pinimg.com/236x/c7/a9/49/c7a949d861560e6aae21d82c2bd819ce--cute-hedgehog-hedgehog-care.jpg",
+        "value": 0
     },
     {
         "id": 4,
         "name": "cool hedgehog",
-        "image": "https://www.meme-arsenal.com/memes/d557d7790838c0e0f458f48b9cfb2f2c.jpg"
+        "image": "https://www.meme-arsenal.com/memes/d557d7790838c0e0f458f48b9cfb2f2c.jpg",
+        "value": 0
     },
     {
         "id": 5,
         "name": "sonic hedgehog",
-        "image": "https://i-cdn.phonearena.com/images/article/43121-image/Sonic-the-Hedgehog-Sega-classic-arrives-on-Android-and-iOS-remastered-and-you-can-play-with-Knuckles-and-Tails.jpg"
+        "image": "https://i-cdn.phonearena.com/images/article/43121-image/Sonic-the-Hedgehog-Sega-classic-arrives-on-Android-and-iOS-remastered-and-you-can-play-with-Knuckles-and-Tails.jpg",
+        "value": 0
     },
     {
         "id": 6,
         "name": "awesome hedgehog",
-        "image": "https://i.pinimg.com/originals/78/ba/3d/78ba3d831ba08795ba8fa48185a97eaa.jpg"
+        "image": "https://i.pinimg.com/originals/78/ba/3d/78ba3d831ba08795ba8fa48185a97eaa.jpg",
+        "value": 0
     },
     {
         "id": 7,
         "name": "spiky hedgehog",
-        "image": "https://i.pinimg.com/736x/77/f9/c3/77f9c389d937dcc4505c5324680c1f38--baby-hedgehogs-llamas.jpg"
+        "image": "https://i.pinimg.com/736x/77/f9/c3/77f9c389d937dcc4505c5324680c1f38--baby-hedgehogs-llamas.jpg",
+        "value": 0
     },
     {
         "id": 8,
         "name": "tiny hedgehog",
-        "image": "https://www.japantimes.co.jp/wp-content/uploads/2016/04/p10-hedgehog-a-20160409-200x200.jpg"
+        "image": "https://www.japantimes.co.jp/wp-content/uploads/2016/04/p10-hedgehog-a-20160409-200x200.jpg",
+        "value": 0
     },
     {
         "id": 9,
         "name": "herman hedgehog",
-        "image": "https://vignette.wikia.nocookie.net/phineasandferb/images/3/3d/Herman_the_Hedgehog.jpg/revision/latest?cb=20120616072418"
+        "image": "https://vignette.wikia.nocookie.net/phineasandferb/images/3/3d/Herman_the_Hedgehog.jpg/revision/latest?cb=20120616072418",
+        "value": 0
     },
     {
         "id": 10,
         "name": "bro hedgehog",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrgc0lPyun5lKyjj_8jQn1kAYCbtyKsV0cHv_q1rycyOYfGCEXA"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrgc0lPyun5lKyjj_8jQn1kAYCbtyKsV0cHv_q1rycyOYfGCEXA",
+        "value": 0
     }
 ]

@@ -6,20 +6,28 @@ import hedgehog from "./hedgehog.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
     header: "Click to start Game",
     hedgehog,
-    score: 0
+    score: 0,
   };
-
-  clickFunction = () => {
-    var tf = Math.round(Math.random());
-    if(tf){
-      this.setState({score: this.state.score + 1,
-      header: "You guessed Correctly"});
+//memory game, see what characters user remembers clicking.
+  clickFunction = event => {
+    let value = event.target.getAttribute("value");
+    let id = event.target.id;
+    let gamewin = this.state.score;
+    if(value == 0){
+      this.setState({score: this.state.score + 1, header: "You guessed Correctly", hedgehog: this.setOneTrue(this.state.hedgehog,id)});
+      console.log("gameWin" + gamewin);
+      if(gamewin === 9){
+        this.setState({header: "You Win the Game! New Game Loading..."});
+        setTimeout(function(){
+          window.location.reload(true);
+        }, 2000);
+      }
     }else{
-      this.setState({header: "You guest Incorrectly"});
+      this.setState({score: 0, header: "You guest Incorrectly. Please Play again", hedgehog: this.setAllClickyFalse(this.state.hedgehog)});
+      console.log(this.state.hedgehog);
     }
     this.setState({hedgehog: this.shuffleArr(this.state.hedgehog)});
   }
@@ -34,6 +42,18 @@ class App extends Component {
       temporaryValue = hedgeArr[currentIndex];
       hedgeArr[currentIndex] = hedgeArr[randomIndex];
       hedgeArr[randomIndex] = temporaryValue;
+    }
+    return hedgeArr;
+  }
+  setOneTrue = (hedgeArr, targId) =>{
+    let index = hedgeArr.map(x => x.id).indexOf(parseInt(targId))
+    console.log(index);
+    hedgeArr[index].value = 1;
+    return hedgeArr;
+  }
+  setAllClickyFalse = (hedgeArr) =>{
+    for(var i = 0; i<hedgeArr.length; i++){
+      hedgeArr[i].value = 0;
     }
     return hedgeArr;
   }
@@ -52,7 +72,8 @@ class App extends Component {
             key={hedge.id}
             image={hedge.image}
             name={hedge.name}
-            clickFunc={this.clickFunction}
+            value={hedge.value}
+            clickFunc={(e) => this.clickFunction(e)}
           />
         ))}
       </Wrapper>
