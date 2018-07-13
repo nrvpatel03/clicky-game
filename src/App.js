@@ -11,14 +11,13 @@ class App extends Component {
     hedgehog,
     score: 0,
   };
-//memory game, see what characters user remembers clicking.
+
   clickFunction = event => {
     let value = event.target.getAttribute("value");
     let id = event.target.id;
     let gamewin = this.state.score;
     if(value == 0){
       this.setState({score: this.state.score + 1, header: "You guessed Correctly", hedgehog: this.setOneTrue(this.state.hedgehog,id)});
-      console.log("gameWin" + gamewin);
       if(gamewin === 9){
         this.setState({header: "You Win the Game! New Game Loading..."});
         setTimeout(function(){
@@ -26,8 +25,7 @@ class App extends Component {
         }, 2000);
       }
     }else{
-      this.setState({score: 0, header: "You guest Incorrectly. Please Play again", hedgehog: this.setAllClickyFalse(this.state.hedgehog)});
-      console.log(this.state.hedgehog);
+      this.setState({score: 0, header: "You guessed Incorrectly. Please Play again", hedgehog: this.setAllClickyFalse(this.state.hedgehog)});
     }
     this.setState({hedgehog: this.shuffleArr(this.state.hedgehog)});
   }
@@ -46,8 +44,7 @@ class App extends Component {
     return hedgeArr;
   }
   setOneTrue = (hedgeArr, targId) =>{
-    let index = hedgeArr.map(x => x.id).indexOf(parseInt(targId))
-    console.log(index);
+    let index = hedgeArr.map(x => x.id).indexOf(parseInt(targId));
     hedgeArr[index].value = 1;
     return hedgeArr;
   }
@@ -64,7 +61,7 @@ class App extends Component {
       <Wrapper>
         <Header
         title={this.state.header}
-        score={"Current Score " + this.state.score}
+        score={"Current Score: " + this.state.score}
         />
         {this.state.hedgehog.map(hedge => (
           <HedgeHogCard

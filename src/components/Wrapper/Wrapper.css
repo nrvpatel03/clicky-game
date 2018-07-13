@@ -1,6 +1,7 @@
 .wrapper {
-  padding-top: 150px;
-  background: #ECEFF1;
+  padding-top: 50px;
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0429/5566/rr2012_0601_5195_shop_preview.png");
+  background-size: cover;
   height: 100%;
   display: flex;
   flex-flow: row wrap;
