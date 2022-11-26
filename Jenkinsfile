@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Update Pipeline Practice') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
